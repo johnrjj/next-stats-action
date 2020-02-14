@@ -14,8 +14,8 @@ module.exports = function actionInfo() {
     PR_STATS_COMMENT_TOKEN,
   } = process.env
 
-  delete process.env.GITHUB_TOKEN
-  delete process.env.PR_STATS_COMMENT_TOKEN
+  // delete process.env.GITHUB_TOKEN
+  // delete process.env.PR_STATS_COMMENT_TOKEN
 
   // only use custom endpoint if we don't have a token
   const commentEndpoint = !PR_STATS_COMMENT_TOKEN && COMMENT_ENDPOINT

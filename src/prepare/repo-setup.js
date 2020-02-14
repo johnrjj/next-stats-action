@@ -8,7 +8,7 @@ module.exports = actionInfo => {
   return {
     async cloneRepo(repoPath = '', dest = '') {
       await remove(dest)
-      await exec(`git clone ${actionInfo.gitRoot}${repoPath} ${dest}`)
+      await exec(`git clone https://${process.env.PR_STATS_COMMENT_TOKEN}@github.com/${repoPath} ${dest}`)
     },
     async checkoutRef(ref = '', repoDir = '') {
       await exec(`cd ${repoDir} && git fetch && git checkout ${ref}`)

@@ -1,4 +1,6 @@
-# Next.js Stats GitHub Action
+# Next.js Stats GitHub Action -- Private Repo Remix
+
+> Forked so next-stats-action works in a private repo.
 
 > Downloads and runs project with provided configs gathering stats to compare branches
 
